@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>To infinity... Knowledge Yard | The Moral Venture</title>
+<meta charset="utf-8">
+<link rel="icon" href="#">
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/form.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+
+
+
+
+<script>
+$(document).ready(function () {
+    $('.slider_wrapper')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: 'fade',
+        waitBannerAnimation: false,
+        progressBar: false
+    });
+});
+$(document).ready(function () {
+    ! function () {
+        var map = [],
+            names = [],
+            win = $(window),
+            header = $('header'),
+            currClass
+            $('.content').each(function (n) {
+                map[n] = this.offsetTop
+                names[n] = $(this).attr('id')
+            })
+            win
+                .on('scroll', function () {
+                    var i = 0
+                    while (map[i++] <= win.scrollTop());
+                    if (currClass !== names[i - 2])
+                        currClass = names[i - 2]
+                    header.removeAttr("class").addClass(names[i - 2])
+                })
+    }();
+});
+function goToByScroll(id) {
+    $('html,body').animate({
+        scrollTop: $("#" + id).offset().top
+    }, 'slow');
+}
+
+$(document).ready(function () {
+    $().UItoTop({
+        easingType: 'easeOutQuart'
+    });
+});
+</script>
+
+</head>
+<body>
+<header class="page1">
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo3214.png" alt=""></a></h1>
+      <div class="menu_block">
+        <nav class="">
+          <ul class="sf-menu">
+            <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+            <li class=" men3"><a onClick="goToByScroll('page3'); return false;" href="#">Our Services</a> <strong class="hover"></strong></li>
+            <li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">About Us</a> <strong class="hover"></strong></li>
+			<li class=" men5"><a href="registration2/index.html">Join With Us</a> <strong class="hover"></strong></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+<div id="page1" class="content3">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slider_wrapper">
+        <ul class="items">
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>Welcome to Code Studio Inv.</h2>
+            </div>
+          </li>
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>Create your future!</h2>
+            </div>
+          </li>
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>We don’t work. We simply follow our passion.</h2>
+            </div>
+          </li>
+          <li> <img src="images/spacer.gif" alt="">
+            <div class="caption banner">
+              <h2>We break down complicated and boring ideas.</h2>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="socials"> <a href="https://www.facebook.com/"></a> <a href="https://twitter.com/"></a> <a href="https://plus.google.com/"></a> </div>
+    </div>
+  </div>
+</div>
+<div id="page2" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slogan">
+        <h3>Our awesome Crew</h3>
+        <div class="text1">  We’re team of programmers, designers, engineers, strategists and digital marketing experts- who can think from your customers’ point of view. Trust us, <br>
+          </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/malik.jpg" alt="">
+        <div class="text1"><a href="#">Abdul Malik M</a></div>
+        Founder & CEO
+        <div class="socials1"> <a href="https://www.facebook.com/mikooz.hhz"></a> <a href="https://twitter.com/iamabdulmalik01"></a> <a href="https://plus.google.com/116056723188953894128/posts"></a> <a href="https://www.linkedin.com/in/abdul-malik-3a264bb7?trk=nav_responsive_tab_profile"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/anas.jpg" alt="">
+        <div class="text1"><a href="#">Anas MP</a></div>
+        Co-founder & CTO
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/hemandh.jpg" alt="">
+        <div class="text1"><a href="#">Hemanth Haridas </a></div>
+        Chief Operating Officer(COO)
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/sahad.jpg" alt="">
+        <div class="text1"><a href="#">Sahad K</a></div>
+        Chief Financial Officer(CFO)
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+  <div class="grid_3">
+      <div class="box maxheight"> <img src="images/abid.jpg" alt="">
+        <div class="text1"><a href="#">Abid Omer</a></div>
+        Chief Strategy Officer(CSO)
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/sayyed.jpg" alt="">
+        <div class="text1"><a href="#">Syed Mohammed</a></div>
+        Business Development
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/haritha.jpg" alt="">
+        <div class="text1"><a href="#">Haritha Av</a></div>
+        Creative Director
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/abu.jpg" alt="">
+        <div class="text1"><a href="#">Abu Thahir</a></div>
+        Lead Developer
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+</div>
+  <div class="grid_3">
+      <div class="box maxheight"> <img src="images/salman.jpg" alt="">
+        <div class="text1"><a href="#">Salman Faris</a></div>
+        Lead Developer
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/fayyiz.jpg" alt="">
+        <div class="text1"><a href="#">Mohamed Fayis</a></div>
+        Lead Developer
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/shameel.jpg" alt="">
+        <div class="text1"><a href="#">Shameel </a></div>
+        Lead Developer
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/sachin.jpg" alt="">
+        <div class="text1"><a href="#">Sachin Cs</a></div>
+        Webmaster 
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="page3" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slogan">
+        <h3>Our Services</h3>
+        <div class="text1"> We ensure you a quality team with high potential to gear up your Career.</div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/mobileapp.png" alt="">
+        <div class="text1"><a href="#">Career Registration</a></div>
+        For Professional and Executive employment Exchanges, Employment Exchange, Employability Center, etc.</div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/web.png" alt="">
+        <div class="text1"><a href="#">Social Relations</a></div>
+        Text Messaging Service, Education News via Whatsapp, Facebook Page.</div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/market.png" alt="">
+        <div class="text1"><a href="#">Scholarship</a></div>
+        Assist for Scholarships provided by different Organisations and Institutions.</div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight1"> <img src="images/events.png" alt="">
+        <div class="text1"><a href="#">Training</a></div>
+        Provides Personality Development, Soft skill development, Leadership, Public speaking events.</div>
+    </div>
+  </div>
+</div>
+
+<div id="page4" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <h3>Our Products</h3>
+    </div>
+    <div class="companies">
+      <div class="grid_3"> <img src="images/games.jpg" alt="">
+        <div class="text1">Games</div>
+        <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/ctalk.jpg" alt="">
+        <div class="text1">C Talk</div>
+        <br>
+        <a href="#">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/mac.jpg" alt="">
+        <div class="text1">Macandroid.Com</div>
+        <br>
+        <a href="http://www.macandroid.com/">Go to Site</a> </div>
+      <div class="grid_3"> <img src="images/letsapp.jpg" alt="">
+        <div class="text1">Let's App</div>
+        <br>
+        <a href="#">Go to Site</a> </div>
+     
+    </div>
+  </div>
+</div>
+<div id="page5" class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="slogan">
+        <h3>What is your future plan?</h3>
+        <div class="text1">  You have an awesome idea about career, and you want to explain to the whole world. We can help you.</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="map">
+	<div class="grid_5 prefix_1">
+        <div class="text1">Let's Start Talking...</div>
+        <form id="form" action="#">
+          <div class="success_wrapper">
+            <div class="success">Contact form submitted!<br>
+              <strong>We will be in touch soon.</strong> </div>
+          </div>
+          <fieldset>
+            <label class="name">
+              <input type="text" value="Name:">
+              <br class="clear">
+              <span class="error error-empty">*This is not a valid name.</span><span class="empty error-empty">*This field is required.</span> </label>
+            <label class="email">
+              <input type="text" value="E-mail:">
+              <br class="clear">
+              <span class="error error-empty">*This is not a valid email address.</span><span class="empty error-empty">*This field is required.</span> </label>
+            <label class="message">
+              <textarea>Message:</textarea>
+              <br class="clear">
+              <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
+            <div class="clear"></div>
+            <div class="btns"><a href="mailto:mail@knowledgeyard.org" data-type="submit" class="link1">Send</a>
+              <div class="clear"></div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="grid_3">
+        <div class="text1">Our Address...</div>
+        <address>
+        <dl>
+          <dt>Knowledge Yard Foundation<br>
+            108/7, Pakara, Tanalur(P.O)<br>
+            Malappuram Dt., Pin:676307</dt>
+          <dd>Phone:&nbsp;<font color="black">+919447740001</font></dd>
+         
+          <dd>E-mail: <a href="#" class="link-1"><font color="black">mail@knowledgeyard.org</font></a></dd>
+        </dl>
+        </address>
+      </div>
+      <div class="grid_4">
+        <div class="text1">We are...</div>
+        <address>
+        The Knowledge Yard is a independent, grant giving charitable trust. 
+Whose main aim is, to advance and develop education, training and qualification at Ozhur, Tanalur panchayaths.
+		
+        </address>
+        
+      </div>
+      
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="copy"> <a onClick="goToByScroll('page1'); return false;" href="#"></a> &copy; 2016 | NDK Solutions Ltd. <br>
+         </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>
